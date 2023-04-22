@@ -1,10 +1,13 @@
-access_key = "xxxxx"
-secret_key = "yyyy"
-regions = "us-east-1" #,"us-east-2","us-east-3"]
-
-vpc_name = "Jenkins"
-cidr_block = "192.168.0.0/16"
-
-public_cidrs = ["192.168.1.0/24"] #,"192.168.2.0/24","192.168.3.0/24","192.168.4.0/24"]
-
-private_cidrs = ["192.168.10.0/24","192.168.20.0/24"] #,"192.168.30.0/24","192.168.40.0/24"]
+aws_region = "us-east-1"
+vpc_cidr = "10.1.0.0/16"
+public_subnet1_cidr = "10.1.1.0/24"
+private_subnet1_cidr = "10.1.20.0/24"
+private_subnet2_cidr = "10.1.30.0/24"
+vpc_name = "terraform-aws-testing"
+IGW_name = "terraform-aws-igw"
+public_subnet1_name = "Terraform_Public_Subnet1-testing"
+private_subnet1_name = "Terraform_Private_Subnet1-testing"
+private_subnet2_name = "Terraform_Private_Subnet2-testing"
+Main_Routing_Table = "Terraform_Main_table-testing"
+key_name = "LaptopKey"
+environment = "dev"
